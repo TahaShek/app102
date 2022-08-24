@@ -1,2 +1,17 @@
-<button class="btn btn-outline-warning " (click)="dataishere()"></button>
-{{MyData}}
+<button class="btn btn-outline-warning " (click)="dataishere()">Data</button>
+<!-- {{MyData}}
+-->
+
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card" style="width: 18rem;" *ngFor="let data of MyData">
+            <img [src]="data.Image[0]" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{data.Name}}</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>        
+    </div>
+</div>

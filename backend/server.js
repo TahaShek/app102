@@ -1,13 +1,13 @@
 const express=require('express');
 const app =express();
-const PORT=3222;
+const LoadMyEnviromentVariable=require('./configration/LoadMyEnviromentVariable')
+const PORT=process.env.PORT;
 
 
 
 app.listen(PORT,()=>{
 
     console.log(`port is launched as  ${PORT}`);
-    // console.log(process.env)
-    // console.log(__dirname)
+    
 })
 
